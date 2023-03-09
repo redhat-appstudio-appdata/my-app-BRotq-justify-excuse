@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-vqcb
+  namespace: dbruscin-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:058e754a53e4e36299a2db05a1ec9ee4ef4bb624efdb6ec691f43e7f5226e450
+        name: my-go
+        resources: {}
+status: {}
