@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-bnfb
+  namespace: dbruscin-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:12d80c7fd63ca0070f00cfea6829df39f864e65da263fee683d08f9c213635d4
+        name: main
+        resources: {}
+status: {}
