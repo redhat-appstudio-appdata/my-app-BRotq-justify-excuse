@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-vqcb
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:BRotq-devfile-sample-go-basic-vqcb
+      - image: quay.io/redhat-appstudio/user-workload@sha256:058e754a53e4e36299a2db05a1ec9ee4ef4bb624efdb6ec691f43e7f5226e450
         name: my-go
         ports:
         - containerPort: 8081
